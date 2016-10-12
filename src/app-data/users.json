@@ -1,0 +1,21 @@
+{
+
+"users":[
+
+{"username":"fahmi", "password":"ganteng"},
+
+{"username":"potter", "password":"deer"},
+
+{"username":"weasley", "password":"terrier"},
+
+{"username":"granger", "password":"weasel"},
+
+{"username":"minerva", "password":"cat"},
+
+{"username":"albus", "password":"phoenix"},
+
+{"username":"severus", "password":"doe"}
+
+] 
+
+}
