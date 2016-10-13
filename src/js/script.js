@@ -1,6 +1,6 @@
 
 function refresh() {
-	console.log(sessionStorage.loggedIn);	
+	//console.log(sessionStorage.loggedIn);	
 	if(typeof(Storage) === "undefined"){
 		$("#landing-div").hide();
 		$("#game-div").hide();
@@ -65,7 +65,7 @@ $("document").ready(function () {
 	refresh();
 
 	$("input").keypress(function(event) {
-		console.log(event.which === 13);
+		//console.log(event.which === 13);
 	    if (event.which === 13) {
 	        event.preventDefault();
 	        $("#login-button").click();
@@ -171,7 +171,7 @@ $("document").ready(function () {
 				var parsed = JSON.parse(localStorage.getItem("rank"));
 				var rank = parsed.rank;
 				rank.push({"name" : sessionStorage.loggedUser, "timeElapsed" : timeClicked - start});
-				console.log(rank);
+				//console.log(rank);
 				rank.sort(sortByTE);
 				rank = rank.slice(0,5);
 
