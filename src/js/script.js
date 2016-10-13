@@ -193,9 +193,9 @@ $("document").ready(function () {
  		
 
     	$.each(rank, function (key, value) {
-    		console.log(value);
+    		//console.log(value);
     		var diff = value.timeElapsed;
-    		console.log(value.timeElapsed);
+    		//console.log(value.timeElapsed);
     		var milisec = diff % 1000;
 			diff = Math.floor(diff/1000);
 			var sec = diff % 60;
@@ -204,10 +204,10 @@ $("document").ready(function () {
     		var timeElapsed = ((min<10)? "0" : "") + min + ":";
 			timeElapsed += ((sec<10)? "0" : "") + sec + ":";
 			timeElapsed += ((milisec<10)? "00" : ((milisec<100)? "0" : "" )) + milisec;
- 			console.log(scoreboardData);
+ 			//console.log(scoreboardData);
     		scoreboardData += "<tr> <td>" + value.name + "</td> <td>" + timeElapsed + "</td></tr>"; 
     	});
-    	console.log(scoreboardData);
+    	//console.log(scoreboardData);
     	$("#hof-data").html(scoreboardData);
 	}
 
