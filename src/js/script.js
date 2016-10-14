@@ -134,7 +134,7 @@ $("document").ready(function () {
 			$("#timer").text(newDate);
 
 
-		}, 200);
+		}, 1);
 	});
 
 	$(".comb-card").click($.throttle(1000, function(){
